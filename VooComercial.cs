@@ -21,8 +21,7 @@ using System.IO;
           throw new ArgumentException ("Não há mais passagens disponiveis");
         }
         this.qtdPermitidaComercial--;
-      Console.WriteLine(this.qtdPermitidaComercial);
-      // Console.WriteLine("Passagem comprada com sucesso! " + this.qtdPermitidaComercial + " Disponiveis");
+      Console.WriteLine("\nPassagem comprada com sucesso! " + this.qtdPermitidaComercial + " Disponiveis");
       }catch(Exception e){
         Console.WriteLine("Não há mais passagens disponiveis");
       }

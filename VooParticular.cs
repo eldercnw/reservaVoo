@@ -5,7 +5,7 @@ using System;
     {
         public float preçoDia;
         public string tempoAluguel;
-        public int qtdPermitidaParticular;
+        public int qtdPermitidaParticular  { get; set; }
 
 
 
@@ -15,6 +15,7 @@ using System;
       {
       this.preçoDia = preçoDia;
       this.tempoAluguel = tempoAluguel;
+      this.qtdPermitidaParticular = qtdPermitidaParticular;
       }
 
 
@@ -23,12 +24,13 @@ using System;
           if(this.qtdPermitidaParticular == 0){
             throw new ArgumentException ("Não há mais passagens disponiveis");
           }
-            this.qtdPermitidaParticular--;
-            Console.WriteLine(this.qtdPermitidaParticular);
+          this.qtdPermitidaParticular--;
+          Console.WriteLine("\nPassagem comprada com sucesso!" + this.qtdPermitidaParticular + " Disponiveis");
         }catch(Exception e){
           Console.WriteLine("Não há mais passagens disponiveis");
-        }
       }
+    
+    }
 
     
 

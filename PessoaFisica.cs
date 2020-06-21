@@ -4,16 +4,16 @@ using System;
     class PessoaFisica : Cliente
     {
         public string nome;
-        public int cpf;
+        public string cpf;
       
 
 
     public PessoaFisica(){
       nome = "";
-      cpf = 0;
+      cpf = "";
     }
 
-    public PessoaFisica(string nome,int cpf,int idade, string telefone, string email):base(idade, telefone, email){
+    public PessoaFisica(string nome,string cpf,int idade, string telefone, string email):base(idade, telefone, email){
       this.nome = nome;
       this.cpf = cpf;
     }
@@ -23,7 +23,7 @@ using System;
       nome=n ;
     }
 
-    public void setCpf(int c){
+    public void setCpf(string c){
       cpf=c ;
     }
 
